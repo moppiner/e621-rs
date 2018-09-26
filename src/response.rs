@@ -1,0 +1,40 @@
+#[derive(Serialize, Deserialize)]
+pub struct CreatedAt {
+    pub json_class: String,
+    pub s: i64,
+    pub n: i64,
+}
+
+#[derive(Serialize, Deserialize)]
+pub struct E621Post {
+    pub id: i64,
+    pub tags: String,
+    pub description: String,
+    pub created_at: CreatedAt,
+    pub creator_id: i64,
+    pub author: String,
+    pub change: i64,
+    pub source: String,
+    pub score: i64,
+    pub fav_count: i64,
+    pub md5: String,
+    pub file_size: i64,
+    pub file_url: String,
+    pub file_ext: String,
+    pub preview_url: String,
+    pub preview_width: i64,
+    pub preview_height: i64,
+    pub sample_url: String,
+    pub sample_width: i64,
+    pub sample_height: i64,
+    pub rating: String,
+    pub status: String,
+    pub width: i64,
+    pub height: i64,
+    pub has_comments: bool,
+    pub has_notes: bool,
+    pub has_children: bool,
+    pub children: String,
+    pub artist: Vec<String>,
+    pub sources: Vec<String>,
+}
